@@ -1,0 +1,164 @@
+ /* Global Rules  */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --main-color: #19c8fa;
+    --second-color: rgb(15 116 143 );
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+/* End of Global Rules  */
+
+/* Start Heading  */
+.main-heading {
+    position: relative;
+}
+.main-heading h2 {
+    font-size: bold;
+    font-weight: 800;
+    padding: 30px 0 0 80px;
+}
+@media(max-width: 767px) {
+    .main-heading h2 {
+        padding: 30px 0 0 50px;
+        font-size: 400;
+        font-weight: bold;
+    }
+}
+.main-heading img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+}
+@media(max-width: 767px) {
+    .main-heading img {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 32px;
+        left: 3px;
+    }
+}
+/* End Heading  */
+
+/* Start container */
+.container {
+    position: relative;
+}
+.container .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    position: absolute;
+    top: -35px;
+    right: 40%;
+    left: 50%;
+    list-style: none;
+}
+.container .links li {
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+/* End container */
+
+/* Start Landing  */
+.landing {
+    position: relative;
+}
+.landing img {
+    position: absolute;
+    width: 300px;
+    left: 40%;
+    right: 30%;
+    top: 30px;
+    border-radius: 50%;
+}
+.landing::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 85px;
+    right: 400px;
+    left: 500px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+}
+.landing h2 {
+    position: absolute;
+    right: 250px;
+    top: 150px;
+    line-height: 1.2;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.landing .code {
+    position: absolute;
+    width: 70px;
+    top: 100px;
+    left: 50px;
+    opacity: .2;
+}
+/* End Landing  */
+ /* Start About  */
+ .about {
+    position: relative;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    bottom: -500px;
+ }
+ .about .sec-title {
+  position: absolute;
+  left: 40%;
+  right: 50%;
+  bottom: 0px;
+  font-weight: bold;
+  font-size: 70px;
+  color: gray;
+ }
+ .about h3 {
+    position: absolute;
+}
+ /* End About  */
+/* Start Footer  */
+.footer {
+    position: relative;
+    /* bottom: -1000px; */
+}
+.footer .links i {
+    width: 10px;
+    height: 10px;
+}
+.footer .github {
+  position: absolute;
+  left: 65px;
+  top: 470px;
+  width: 25px;
+}
+.footer .codepen {
+  position: absolute;
+  left: 95px;
+  top: 470px;
+  width: 25px;
+}
+.footer .linkedin {
+  position: absolute;
+  left: 127px;
+  top: 470px;
+  width: 25px;
+}
+.footer .email {
+  position: absolute;
+  left: 160px;
+  top: 470px;
+  width: 25px;
+}
+/* End Footer  */
